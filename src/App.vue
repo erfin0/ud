@@ -7,12 +7,14 @@ const lihat = ref(true);
 </script>
 
 <template>
-  <div>
-    <sampul v-if="lihat" @button-Click="lihat=!lihat" />
-    <isi v-else>Oh no 😢</isi>
-  </div>
-  <h1>{{lihat}}</h1>
-  <button type="button" @click="lihat = !lihat">xzx🤐 </button>
+  
+    <div class="mx-auto w-screen max-w-md bg-indigo-500">
+      <sampul v-if="lihat" @button-Click="lihat = !lihat" />
+      <isi v-else>Oh no 😢</isi>
+    </div>
+  
+  <h1>{{ lihat }}</h1>
+  <button type="button" @click="lihat = !lihat">xzx🤐</button>
   <HelloWorld msg="Vite + Vue" />
 </template>
 
