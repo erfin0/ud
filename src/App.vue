@@ -4,11 +4,15 @@ import Sampul from "./components/Sampul.vue";
 import isi from "./components/isi.vue";
 
 const lihat = ref(true);
+const tamu ="tukijo";
+const laki ="maman";
+const perempuan="tukinem";
 </script>
 
 <template>
   <div class="mx-auto set-lebar bg-indigo-500 ">
-    <sampul v-if="lihat" @button-Click="lihat = !lihat" />
+    <sampul :nama_tamu="tamu"  :nama_laki="laki"  :nama_perempuan="perempuan"  v-if="lihat"
+      @button-Click="lihat = !lihat" />
     <isi v-else />
   </div>
 </template>
