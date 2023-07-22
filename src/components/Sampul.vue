@@ -19,6 +19,7 @@ const props = defineProps({
     <div class="relative rounded-xl p-8 h-full">
       <div class="flex h-full flex-col mx-auto space-y-4  text-white  leading-6 ">
         <div class="h-full">
+          
           <div class="h-1/3">
             <div class="p-4 flex items-center justify-center ">
               <h1>The Wedding Of</h1>
@@ -28,9 +29,10 @@ const props = defineProps({
             </div>
           </div>
 
-          <div class="grid grid-cols-1 gap-12 content-center">
+          <div class="h-4/3 grid grid-cols-1 gap-12 content-center">
           
               <div class="my-8  font-cinzel text-5xl space-y-4 capitalize text-center ">
+                
             <p >{{ nama_laki || 'nama laki laki' }} </p>
             <p>&</p>
             <p>{{ nama_perempuan || 'nama perempuan' }}</p>
