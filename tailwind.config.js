@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        ruge:['Ruge Boogie', 'cursive'],
+        cinzel:[ 'Cinzel Decorative', 'cursive'],
+
+      },
+    
+    },
   },
   plugins: [],
 }

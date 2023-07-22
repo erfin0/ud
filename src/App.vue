@@ -10,7 +10,7 @@ const perempuan="tukinem";
 </script>
 
 <template>
-  <div class="mx-auto set-lebar bg-indigo-500 ">
+  <div class="mx-auto set-lebar ">
     <sampul :nama_tamu="tamu"  :nama_laki="laki"  :nama_perempuan="perempuan"  v-if="lihat"
       @button-Click="lihat = !lihat" />
     <isi v-else />
